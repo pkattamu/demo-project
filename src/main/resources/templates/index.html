@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Simple Java Website</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 40px; }
+    .card { max-width: 720px; padding: 24px; border: 1px solid #eee; border-radius: 16px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p { margin: 8px 0; color: #333; }
+    code { background: #f6f8fa; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 th:text="${appName}">Simple Java Website</h1>
+    <p>✅ If you can see this page, your Spring Boot app is running.</p>
+    <p>Current time (server): <code th:text="${now}">time</code></p>
+    <p>Try editing <code>index.html</code> and redeploying via Jenkins.</p>
+  </div>
+</body>
+</html>
